@@ -1,0 +1,103 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2639
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 #include<stdio.h>\
+\
+main()\
+\{\
+    char choose;\
+    int n;\
+    printf("FOR ENGLISH PRESS 1\\n");\
+    printf("HINDI KE LIYE 2 DABAYE\\n");\
+    printf("GUJRATI MAATE 3 DABAVO\\n");\
+    \
+    printf("Enter a number :-    ");\
+    scanf("%c",& choose);\
+    \
+    switch(choose)\
+    \{\
+        case '1':\
+            printf("FOR RECHARGE PRESS 1\\n");\
+            printf("FOR CUSTOMER SERVICE PRESS 2\\n");\
+            printf("FOR CALLERTUNE DEACTIVATE PRESS 3\\n");\
+            \
+            printf("enter your choice\\n");\
+            scanf("%d",&n);\
+            \
+            switch(n)\
+            \{\
+                case 1:\
+                    printf("YOUR RECHARGE HAS BEEN DONE\\n");\
+                    break;\
+                case 2:\
+                    printf("YOU'LL BE CONNECTED TO AN AGENT SHORTLY\\n");\
+                    break;\
+                case 3:\
+                    printf("YOUR CALLERTUNE HAS BEEN DEACTIVATED\\n");\
+                    break;\
+                default :\
+                    printf("INVALID NUMBER\\n");\
+                    break;\
+            \}\
+    \
+    break;\
+    \
+        case '2':\
+            printf("RECHARGE KE LIYE 1 DABAYE\\n");\
+            printf("CUSTOMER SERVICE KE LIYE 2 DABAYE\\n");\
+            printf("CALLERTUNE DEACTIVATE KARNE KE LIYE 3 DABAYE\\n");\
+            \
+            printf("KOI BHI EK NUMBER DALIYE\\n");\
+            scanf("%d",&n);\
+            \
+            switch(n)\
+            \{\
+                case 1:\
+                    printf("AAPKA RECHARGE HO GAYA\\n");\
+                    break;\
+                case 2:\
+                    printf("APKO THODI DER MEH AGENT KE SAATH CONNECT KAR DEGE\\n");\
+                    break;\
+                case 3:\
+                    printf("CALLERTUNE BANDH HO CHUKI HAI\\n");\
+                    break;\
+                default :\
+                    printf("GALAT NUMBER HAI\\n");\
+                    break;\
+            \}\
+    \
+    break;\
+    \
+        case '3':\
+            printf("RECHARGE MAATE 1 DABAVO\\n");\
+            printf("CUSTOMER SERVICE MAATE 2 DABAVO\\n");\
+            printf("CALLERTUNE BANDH KARVA MAATE 3 DABAV0\\n");\
+            \
+            printf("NUMBER NAKHO\\n");\
+            scanf("%d",&n);\
+            \
+            switch(n)\
+            \{\
+                case 1:\
+                    printf("RECHARGE THAI GAYU\\n");\
+                    break;\
+                case 2:\
+                    printf("AGENT SAATHE THODIK VAAR MA CONNECT KARSU\\n");\
+                    break;\
+                case 3:\
+                    printf("CALLERTUNE BANDH THAI GAI\\n");\
+                    break;\
+                default :\
+                    printf("KHOTO NUMBER\\n");\
+                    break;\
+            \}\
+    break;\
+    default:\
+        printf("invalid number\\n");\
+        break;\
+    \}    \
+\}}
